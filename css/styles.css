@@ -9,6 +9,14 @@ body {
   font-weight: 300;
 }
 
+.nft-preview-card {
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 1rem;
+  margin: 3.3333rem auto;
+  padding: 1.3333rem;
+  width: 15.6667rem;
+}
+
 /* footer */
 .attribution {
   font-size: 11px;
