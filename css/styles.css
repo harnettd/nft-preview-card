@@ -40,61 +40,56 @@ body {
   margin: 0 auto 0.8rem;
 }
 
-.cost-and-time {
+.cost-and-time-row {
+  display: flex;
+  justify-content: space-between;
   font-size: 0.9rem;
-  margin: 0 auto 0.8rem;
-  position: relative;
+  margin: 0 auto 0.9rem;
 }
-
-.crypto-cost {
+.cost-and-time-row .crypto-cost {
   color: hsl(178deg, 100%, 50%);
   font-weight: 600;
 }
-
-.ethereum-img {
+.cost-and-time-row .ethereum-img {
   height: 1rem;
   margin: 0 0.2rem 0 0;
-  position: relative;
-  top: 0.18rem;
+  vertical-align: middle;
   width: 0.6111rem;
 }
-
-.time-remaining {
+.cost-and-time-row .time-remaining {
   color: hsl(215deg, 51%, 70%);
   text-align: right;
 }
-
-.clock-img {
+.cost-and-time-row .clock-img {
   height: 0.9444rem;
   margin: 0 0.18rem 0 0;
   position: relative;
-  top: 0.18rem;
+  bottom: 0.1111rem;
+  vertical-align: middle;
   width: 0.9444rem;
 }
 
 .horizontal-line {
   color: hsl(215deg, 32%, 27%);
   height: 1px;
-  margin: 0 auto 0.2rem;
+  margin: 0 auto 0.8rem;
   width: 100%;
 }
 
 .nft-creator {
   font-size: 0.85rem;
   font-weight: 400;
-  margin: 0 auto 0.35rem;
-  position: relative;
+  margin: 0 auto;
 }
 
 .avatar-img {
   border: solid 1px;
   border-color: hsl(0deg, 0%, 100%);
   border-radius: 100%;
-  height: 1.8rem;
+  height: 1.75rem;
   margin: 0 0.6rem 0 0;
-  position: relative;
-  top: 0.65rem;
-  width: 1.8rem;
+  vertical-align: middle;
+  width: 1.75rem;
 }
 
 .nft-creator-name {
