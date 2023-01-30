@@ -1,0 +1,24 @@
+@import "colors";
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: $very-dark-blue-main-BG;
+    color: $soft-blue;
+    font: {
+        family: 'Outfit', sans-serif;
+        weight: 300;
+    }
+}
+
+/* footer */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
