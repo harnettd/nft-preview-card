@@ -24,12 +24,29 @@ body {
 }
 
 .nft-image {
+    align-items: center;
+    background-color: $cyan;
     background-image: url("../images/image-equilibrium.jpg");
     background-size: 15.5556rem;
     border-radius: 0.5rem;
+    display: flex;
     height: 15.5556rem;
+    justify-content: center;
     margin: 0 auto 1.35rem;
     width: 15.5556rem;
+
+    .eye-img-container {
+        background-color: $cyan;
+        height: 2.6667rem;
+        width: 2.6667rem;
+
+        .eye-img {
+            height: 2.6667rem;
+            width: 2.6667rem;  
+        }
+
+    }
+
 }
 
 .nft-title {
