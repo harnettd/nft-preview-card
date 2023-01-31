@@ -34,6 +34,10 @@ body {
   margin: 0 auto 0.75rem;
 }
 
+.nft-title:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
 .nft-description {
   font-size: 0.9rem;
   line-height: 1.5;
@@ -99,6 +103,10 @@ body {
 
 .nft-creator-name {
   color: hsl(0deg, 0%, 100%);
+}
+
+.nft-creator-name:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 
 /* footer */

@@ -41,6 +41,10 @@ body {
     margin: 0 auto 0.75rem;
 }
 
+.nft-title:hover {
+    color: $cyan;
+}
+
 .nft-description {
     font-size: 0.9rem;
     line-height: 1.5;
@@ -111,6 +115,10 @@ body {
 
 .nft-creator-name {
     color: $white;
+}
+
+.nft-creator-name:hover {
+    color: $cyan;
 }
 
 /* footer */
