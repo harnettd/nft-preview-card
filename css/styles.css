@@ -36,6 +36,7 @@ body {
 
 .nft-title:hover {
   color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
 }
 
 .nft-description {
@@ -107,8 +108,16 @@ body {
 
 .nft-creator-name:hover {
   color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
 }
 
+@media only screen and (min-width: 600px) {
+  .nft-preview-card {
+    margin: 3.3333rem auto;
+    padding: 1.3333rem;
+    width: 15.6667rem;
+  }
+}
 /* footer */
 .attribution {
   font-size: 11px;
@@ -117,6 +126,4 @@ body {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
