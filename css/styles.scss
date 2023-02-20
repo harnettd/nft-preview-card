@@ -1,149 +1,151 @@
 @import "colors";
 
 html {
-    font-size: 18px;
+  font-size: 18px;
+}
+
+body {
+  background-color: $very-dark-blue-main-BG;
+  color: $soft-blue;
+  font: {
+    family: 'Outfit', sans-serif;
+    weight: 300;
+  }
 }
 
 /* main */
 
-body {
-    background-color: $very-dark-blue-main-BG;
-    color: $soft-blue;
-    font: {
-        family: 'Outfit', sans-serif;
-        weight: 300;
-    }
-}
-
 .nft-preview-card {
-    background-color: $very-dark-blue-card-BG;
-    border-radius: 1rem;
-    margin: 3.3333rem auto;
-    padding: 1.3333rem;
-    width: 15.6667rem;
+  background-color: $very-dark-blue-card-BG;
+  border-radius: 1rem;
+  margin: 3.3333rem auto;
+  padding: 1.3333rem;
+  width: 15.6667rem;
 }
 
-.nft-image {
+.image-wrapper {
+  position: relative;
+
+  .image-equilibrium {
+    display: block;
+    width: 100%;
+  }
+
+  .image-eye-wrapper {
     align-items: center;
-    background-color: $cyan;
-    background-image: url("../images/image-equilibrium.jpg");
-    background-size: 15.5556rem;
-    border-radius: 0.5rem;
-    display: flex;
-    height: 15.5556rem;
+    background: rgba(0, 255, 255, 0.5);
+    display: none;
+    height: 100%;
     justify-content: center;
-    margin: 0 auto 1.35rem;
-    width: 15.5556rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 
-    .eye-img-container {
-        background-color: $cyan;
-        height: 2.6667rem;
-        width: 2.6667rem;
-
-        .eye-img {
-            height: 2.6667rem;
-            width: 2.6667rem;  
-        }
-
+    .image-eye {
+      height: 16%;
+      width: 16%;
     }
+  }
+}
 
+.image-wrapper:hover > .image-eye-wrapper {
+  display: flex;
 }
 
 .nft-title {
-    color: $white;
-    font: {
-        size: 1.2rem;
-        weight: 600;
-    }
-    margin: 0 auto 0.75rem;
+  color: $white;
+  font: {
+    size: 1.2rem;
+    weight: 600;
+  }
+  margin: 0 auto 0.75rem;
 }
 
 .nft-title:hover {
-    color: $cyan;
+  color: $cyan;
 }
 
 .nft-description {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin: 0 auto 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 auto 0.8rem;
 }
 
 .cost-and-time-row {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.9rem;
-    margin: 0 auto 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: 0 auto 0.9rem;
 
-    .crypto-cost {
-        color: $cyan;
-        font-weight: 600;
-    }
-    
-    .ethereum-img {
-        bottom: 0.1rem;
-        height: 1rem;
-        margin: 0 0.2rem 0 0;
-        position: relative;
-        vertical-align: middle;
-        width: 0.6111rem;
-    }
-    
-    .time-remaining {
-        color: $soft-blue;
-        font-weight: 400;
-        text-align: right;
-    }
-    
-    .clock-img {
-        bottom: 0.1111rem;
-        height: 0.9444rem;
-        margin: 0 0.18rem 0 0;
-        position: relative;
-        vertical-align: middle;
-        width: 0.9444rem;
-    }
+  .crypto-cost {
+    color: $cyan;
+    font-weight: 600;
+  }
 
+  .ethereum-img {
+    bottom: 0.1rem;
+    height: 1rem;
+    margin: 0 0.2rem 0 0;
+    position: relative;
+    vertical-align: middle;
+    width: 0.6111rem;
+  }
+
+  .time-remaining {
+    color: $soft-blue;
+    font-weight: 400;
+    text-align: right;
+  }
+
+  .clock-img {
+    bottom: 0.1111rem;
+    height: 0.9444rem;
+    margin: 0 0.18rem 0 0;
+    position: relative;
+    vertical-align: middle;
+    width: 0.9444rem;
+  }
 }
 
 .horizontal-line {
-    color: $very-dark-blue-line;
-    height: 1px;
-    margin: 0 auto 0.8rem;
-    width: 100%;
+  color: $very-dark-blue-line;
+  height: 1px;
+  margin: 0 auto 0.8rem;
+  width: 100%;
 }
 
 .nft-creator {
-    font-size: 0.85rem;
-    font-weight: 400;
-    margin: 0 auto;
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin: 0 auto;
 }
 
 .avatar-img {
-    bottom: 0.1rem;
-    border: solid 0.1rem;
-    border-color: $white;
-    border-radius: 100%;
-    height: 1.75rem;
-    margin:0 0.6rem 0 0;
-    position: relative;
-    vertical-align: middle;
-    width: 1.75rem;
+  bottom: 0.1rem;
+  border: solid 0.1rem;
+  border-color: $white;
+  border-radius: 100%;
+  height: 1.75rem;
+  margin: 0 0.6rem 0 0;
+  position: relative;
+  vertical-align: middle;
+  width: 1.75rem;
 }
 
 .nft-creator-name {
-    color: $white;
+  color: $white;
 }
 
 .nft-creator-name:hover {
-    color: $cyan;
+  color: $cyan;
 }
-
 /* footer */
-
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

@@ -2,7 +2,6 @@ html {
   font-size: 18px;
 }
 
-/* main */
 body {
   background-color: hsl(217deg, 54%, 11%);
   color: hsl(215deg, 51%, 70%);
@@ -10,6 +9,7 @@ body {
   font-weight: 300;
 }
 
+/* main */
 .nft-preview-card {
   background-color: hsl(216deg, 50%, 16%);
   border-radius: 1rem;
@@ -18,26 +18,31 @@ body {
   width: 15.6667rem;
 }
 
-.nft-image {
+.image-wrapper {
+  position: relative;
+}
+.image-wrapper .image-equilibrium {
+  display: block;
+  width: 100%;
+}
+.image-wrapper .image-eye-wrapper {
   align-items: center;
-  background-color: hsl(178deg, 100%, 50%);
-  background-image: url("../images/image-equilibrium.jpg");
-  background-size: 15.5556rem;
-  border-radius: 0.5rem;
-  display: flex;
-  height: 15.5556rem;
+  background: rgba(0, 255, 255, 0.5);
+  display: none;
+  height: 100%;
   justify-content: center;
-  margin: 0 auto 1.35rem;
-  width: 15.5556rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-.nft-image .eye-img-container {
-  background-color: hsl(178deg, 100%, 50%);
-  height: 2.6667rem;
-  width: 2.6667rem;
+.image-wrapper .image-eye-wrapper .image-eye {
+  height: 16%;
+  width: 16%;
 }
-.nft-image .eye-img-container .eye-img {
-  height: 2.6667rem;
-  width: 2.6667rem;
+
+.image-wrapper:hover > .image-eye-wrapper {
+  display: flex;
 }
 
 .nft-title {
