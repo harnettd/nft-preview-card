@@ -1,3 +1,7 @@
+* {
+  margin-top: 0;
+}
+
 html {
   font-size: 18px;
 }
@@ -7,6 +11,8 @@ body {
   color: hsl(215deg, 51%, 70%);
   font-family: "Outfit", sans-serif;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
 }
 
 main .nft-preview-card {
@@ -24,6 +30,9 @@ main .nft-preview-card {
   }
 }
 main .image-wrapper {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
   position: relative;
 }
 main .image-wrapper .image-equilibrium {
@@ -46,13 +55,14 @@ main .image-wrapper .image-eye-wrapper .image-eye {
   width: 16%;
 }
 main .image-wrapper:hover > .image-eye-wrapper {
+  cursor: pointer;
   display: flex;
 }
 main .nft-title {
   color: hsl(0deg, 0%, 100%);
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 0 auto 0.75rem;
+  margin-bottom: 0.75rem;
 }
 main .nft-title:hover {
   color: hsl(178deg, 100%, 50%);
@@ -60,14 +70,14 @@ main .nft-title:hover {
 }
 main .nft-description {
   font-size: 0.9rem;
-  line-height: 1.5;
-  margin: 0 auto 0.8rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
 }
 main .cost-and-time-row {
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
-  margin: 0 auto 0.9rem;
+  margin-bottom: 0.7rem;
 }
 main .cost-and-time-row .crypto-cost {
   color: hsl(178deg, 100%, 50%);
@@ -97,13 +107,13 @@ main .cost-and-time-row .clock-img {
 main .horizontal-line {
   color: hsl(215deg, 32%, 27%);
   height: 1px;
-  margin: 0 auto 0.8rem;
+  margin-bottom: 1rem;
   width: 100%;
 }
 main .nft-creator {
   font-size: 0.85rem;
   font-weight: 400;
-  margin: 0 auto;
+  margin-bottom: -0.17rem;
 }
 main .avatar-img {
   bottom: 0.1rem;
