@@ -13,7 +13,7 @@
 
   <!-- local stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
-  
+
   <title>Frontend Mentor | NFT preview card component</title>
 
 </head>
@@ -22,7 +22,12 @@
   <main>
     <div class="nft-preview-card">
 
-      <div class="nft-image"></div>
+      <div class="image-wrapper">
+          <img class="image-equilibrium" src="images/image-equilibrium.jpg" alt="">
+          <div class="image-eye-wrapper">
+            <img class="image-eye" src="images/icon-view.svg" alt="">
+          </div>
+      </div>
 
       <p class="nft-title">Equilibrium #3429</p>
 
@@ -31,7 +36,7 @@
       <div class="cost-and-time-row">
         <div class="ethereum-column">
           <img class="ethereum-img" src="images/icon-ethereum.svg" alt="ethereum-image">
-          <span class="crypto-cost">0.041 ETH</span> 
+          <span class="crypto-cost">0.041 ETH</span>
         </div>
         <div class="time-column">
           <img class="clock-img" src="images/icon-clock.svg" alt="clock-image">
@@ -48,7 +53,7 @@
 
   <footer>
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Derek Harnett</a>.
     </div>
   </footer>
