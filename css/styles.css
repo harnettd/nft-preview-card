@@ -18,15 +18,16 @@ body {
 main .nft-preview-card {
   background-color: hsl(216deg, 50%, 16%);
   border-radius: 1rem;
+  box-sizing: border-box;
   margin: 3.3333rem auto;
   padding: 1.3333rem;
-  width: 15.6667rem;
+  width: 18.3333rem;
 }
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   main .nft-preview-card {
-    margin: 3.3333rem auto;
+    margin: 8.3333rem auto;
     padding: 1.3333rem;
-    width: 15.6667rem;
+    width: 19.4444rem;
   }
 }
 main .image-wrapper {
@@ -34,6 +35,11 @@ main .image-wrapper {
   overflow: hidden;
   margin-bottom: 1.2rem;
   position: relative;
+}
+@media screen and (min-width: 576px) {
+  main .image-wrapper {
+    margin-bottom: 1.5rem;
+  }
 }
 main .image-wrapper .image-equilibrium {
   display: block;
@@ -64,6 +70,11 @@ main .nft-title {
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
+@media screen and (min-width: 576px) {
+  main .nft-title {
+    margin-bottom: 0.8rem;
+  }
+}
 main .nft-title:hover {
   color: hsl(178deg, 100%, 50%);
   cursor: pointer;
@@ -73,11 +84,23 @@ main .nft-description {
   line-height: 1.6;
   margin-bottom: 0.8rem;
 }
+@media screen and (min-width: 576px) {
+  main .nft-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+}
 main .cost-and-time-row {
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
   margin-bottom: 0.7rem;
+}
+@media screen and (min-width: 576px) {
+  main .cost-and-time-row {
+    margin-bottom: 1.15rem;
+  }
 }
 main .cost-and-time-row .crypto-cost {
   color: hsl(178deg, 100%, 50%);
@@ -115,6 +138,11 @@ main .nft-creator {
   font-weight: 400;
   margin-bottom: -0.17rem;
 }
+@media screen and (min-width: 576px) {
+  main .nft-creator {
+    margin-bottom: 0.2rem;
+  }
+}
 main .avatar-img {
   bottom: 0.1rem;
   border: solid 0.1rem;
@@ -140,6 +168,4 @@ footer .attribution {
 }
 footer .attribution a {
   color: hsl(228deg, 45%, 44%);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

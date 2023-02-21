@@ -1,13 +1,13 @@
 @import "colors";
 
-$mobile: 600px;
+$mobile: 576px;
 
 * {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 html {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 body {
@@ -28,49 +28,54 @@ main {
     .nft-preview-card {
         background-color: $very-dark-blue-card-BG;
         border-radius: 1rem;
+        box-sizing: border-box;
         margin: 3.3333rem auto;
         padding: 1.3333rem;
-        width: 15.6667rem;
+        width: 18.3333rem;
 
-        @media only screen and (min-width: $mobile) {
-            margin: 3.3333rem auto;
+        @media screen and (min-width: $mobile) {
+            margin: 8.3333rem auto;
             padding: 1.3333rem;
-            width: 15.6667rem;
+            width: 19.4444rem;
         }
     }
 
     .image-wrapper {
-      border-radius: 0.5rem;
-      overflow: hidden;
-      margin-bottom: 1.2rem;
-      position: relative;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        margin-bottom: 1.2rem;
+        position: relative;
 
-      .image-equilibrium {
-        display: block;
-        width: 100%;
-      }
-
-      .image-eye-wrapper {
-        align-items: center;
-        background: rgba(0, 255, 255, 0.5);
-        display: none;
-        height: 100%;
-        justify-content: center;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-
-        .image-eye {
-          height: 16%;
-          width: 16%;
+        @media screen and (min-width: $mobile) {
+            margin-bottom: 1.5rem;
         }
-      }
+
+        .image-equilibrium {
+            display: block;
+            width: 100%;
+        }
+
+        .image-eye-wrapper {
+            align-items: center;
+            background: rgba(0, 255, 255, 0.5);
+            display: none;
+            height: 100%;
+            justify-content: center;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+            .image-eye {
+                height: 16%;
+                width: 16%;
+            }
+        }
     }
 
-    .image-wrapper:hover > .image-eye-wrapper {
-      cursor: pointer;
-      display: flex;
+    .image-wrapper:hover>.image-eye-wrapper {
+        cursor: pointer;
+        display: flex;
     }
 
     .nft-title {
@@ -82,6 +87,10 @@ main {
         }
 
         margin-bottom: 0.75rem;
+
+        @media screen and (min-width: $mobile) {
+            margin-bottom: 0.8rem;
+        }
     }
 
     .nft-title:hover {
@@ -93,6 +102,12 @@ main {
         font-size: 0.9rem;
         line-height: 1.6;
         margin-bottom: 0.8rem;
+
+        @media screen and (min-width: $mobile) {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1.25rem;
+        }
     }
 
     .cost-and-time-row {
@@ -100,6 +115,10 @@ main {
         justify-content: space-between;
         font-size: 0.9rem;
         margin-bottom: 0.7rem;
+
+        @media screen and (min-width: $mobile) {
+            margin-bottom: 1.15rem;
+        }
 
         .crypto-cost {
             color: $cyan;
@@ -143,6 +162,10 @@ main {
         font-size: 0.85rem;
         font-weight: 400;
         margin-bottom: -0.17rem;
+
+        @media screen and (min-width: $mobile) {
+            margin-bottom: 0.2rem;
+        }
     }
 
     .avatar-img {
