@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background-color: hsl(217deg, 54%, 11%);
-  color: hsl(215deg, 51%, 70%);
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   margin: 0;
@@ -16,7 +16,7 @@ body {
 }
 
 main .nft-preview-card {
-  background-color: hsl(216deg, 50%, 16%);
+  background-color: hsl(216, 50%, 16%);
   border-radius: 1rem;
   box-sizing: border-box;
   margin: 3.3333rem auto;
@@ -65,7 +65,7 @@ main .image-wrapper:hover > .image-eye-wrapper {
   display: flex;
 }
 main .nft-title {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
@@ -76,7 +76,7 @@ main .nft-title {
   }
 }
 main .nft-title:hover {
-  color: hsl(178deg, 100%, 50%);
+  color: hsl(178, 100%, 50%);
   cursor: pointer;
 }
 main .nft-description {
@@ -103,7 +103,7 @@ main .cost-and-time-row {
   }
 }
 main .cost-and-time-row .crypto-cost {
-  color: hsl(178deg, 100%, 50%);
+  color: hsl(178, 100%, 50%);
   font-weight: 600;
 }
 main .cost-and-time-row .ethereum-img {
@@ -115,7 +115,7 @@ main .cost-and-time-row .ethereum-img {
   width: 0.6111rem;
 }
 main .cost-and-time-row .time-remaining {
-  color: hsl(215deg, 51%, 70%);
+  color: hsl(215, 51%, 70%);
   font-weight: 400;
   text-align: right;
 }
@@ -128,7 +128,7 @@ main .cost-and-time-row .clock-img {
   width: 0.9444rem;
 }
 main .horizontal-line {
-  color: hsl(215deg, 32%, 27%);
+  color: hsl(215, 32%, 27%);
   height: 1px;
   margin-bottom: 1rem;
   width: 100%;
@@ -146,7 +146,7 @@ main .nft-creator {
 main .avatar-img {
   bottom: 0.1rem;
   border: solid 0.1rem;
-  border-color: hsl(0deg, 0%, 100%);
+  border-color: hsl(0, 0%, 100%);
   border-radius: 100%;
   height: 1.75rem;
   margin: 0 0.6rem 0 0;
@@ -155,10 +155,10 @@ main .avatar-img {
   width: 1.75rem;
 }
 main .nft-creator-name {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 main .nft-creator-name:hover {
-  color: hsl(178deg, 100%, 50%);
+  color: hsl(178, 100%, 50%);
   cursor: pointer;
 }
 
@@ -167,5 +167,5 @@ footer .attribution {
   text-align: center;
 }
 footer .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=styles.css.map */
